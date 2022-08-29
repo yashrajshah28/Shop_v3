@@ -9,7 +9,7 @@ import PgFOF from './Components/PgFOF';
 import Addproduct from './Components/Addproduct';
 import Allproductpage from './Components/Some-Product-Components/Allproductpage';
 //import Productcontainer from './Components/Some-Product-Components/Productcontainer';
-
+import Specificproductpage from './Components/Some-Product-Components/Specificproductpage';
 
 
 function App() {
@@ -23,6 +23,7 @@ function App() {
         <Route exact path="/cart" element={<Cart/>} />
         <Route exact path="/userprofile" element={<UserProfile/>} />
         <Route exact path="/sellproduct" element={<Addproduct/>} />
+
         <Route exact path="/product-type/mobiles" element={<Allproductpage type={'Mobile'} />} />
         <Route exact path="/product-type/laptops" element={<Allproductpage type={'Laptop'} />} />
         <Route exact path="/product-type/cameras" element={<Allproductpage type={'Camera'} />} />
@@ -30,8 +31,11 @@ function App() {
         <Route exact path="/product-type/shoes" element={<Allproductpage type={'Shoes'} />} />
         <Route exact path="/product-type/furniture" element={<Allproductpage type={'Furniture'} />} />
 
+        <Route path="/product/:type/:id" element={<Specificproductpage />} />
 
-        <Route exact path="*" element={<PgFOF/>}/>
+        
+
+        <Route path="*" element={<PgFOF/>}/>
       </Routes>
     </BrowserRouter>
   );

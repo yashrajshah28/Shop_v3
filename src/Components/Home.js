@@ -4,6 +4,8 @@ import Products from './Products'
 import Banner from './Banner'
 import { auth, db } from '../FirebaseConfigs/firebaseConfig'
 import { collection, getDocs, query, where } from 'firebase/firestore'
+import ProductSlider from './Some-Product-Components/ProductSlider'
+import './Home.css'
 
 const Home = () => {
   function GetCurrentUser() {
@@ -38,7 +40,14 @@ const Home = () => {
       <Navbar />
       <Banner />
       <Products />
-      <p>{loggeduser ? loggeduser[0].email:"No data"}</p>
+      <div className='slider-head'><p>Limited Time Deals</p></div>
+      <ProductSlider type={'Mobile'} />
+      <ProductSlider type={'Laptop'} />
+      <ProductSlider type={'Camera'} />
+      <ProductSlider type={'Fashion'} />
+      <ProductSlider type={'Shoes'} />
+      <ProductSlider type={'Furniture'} />
+      
     </div>
   )
 }

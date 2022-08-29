@@ -25,6 +25,13 @@
 .producttitle {
     font-size: 35px;
     font-weight: 600;
+    background-color: white;
+    border: none;
+}
+
+.producttitle:hover {
+    cursor: pointer;
+    color: #ffbb00;
 }
 
 .product-container {
