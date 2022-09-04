@@ -33,6 +33,9 @@ const Productcontainer = (product) => {
         </div>
         <a href={`/product/${p.producttype}/${p.id}`}>
           <button className='showmore-btn'>More Dertais &gt;</button>
+          
+          
+
         </a>
       </div>
     </div>

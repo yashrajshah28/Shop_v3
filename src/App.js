@@ -30,6 +30,7 @@ function App() {
         <Route exact path="/product-type/fashion" element={<Allproductpage type={'Fashion'} />} />
         <Route exact path="/product-type/shoes" element={<Allproductpage type={'Shoes'} />} />
         <Route exact path="/product-type/furniture" element={<Allproductpage type={'Furniture'} />} />
+        <Route exact path="/cartdata" element={<Cart />} />
 
         <Route path="/product/:type/:id" element={<Specificproductpage />} />
 

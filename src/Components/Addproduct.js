@@ -10,6 +10,7 @@ import './Addproduct.css'
 const Addproduct = () => {
     const [producttitle, setProductTitle] = useState("")
     const [producttype, setProductType] = useState("")
+    const [keyspecs, setKeyspecs] = useState("")
     const [description, setDescription] = useState("")
     const [brand, setBrand] = useState("")
     const [customersupport, setCustomersupport] = useState("")
@@ -83,7 +84,8 @@ const Addproduct = () => {
                     customersupport,
                     price,
                     warranty,
-                    productimage: url
+                    productimage: url,
+                    keyspecs:keyspecs
                 })
             })
         })
@@ -117,6 +119,9 @@ const Addproduct = () => {
             {imageError && <>
                 <div className='error-msg'>{imageError}</div>
             </>}
+
+            <label>Key Specification</label>
+            <textarea onChange={(e)=> setKeyspecs(e.target.value)} placeholder="Enter some ksy specification"></textarea>
 
             <label>Description</label>
             <textarea onChange={(e) => setDescription(e.target.value)} placeholder="Description your Product in breif"></textarea>

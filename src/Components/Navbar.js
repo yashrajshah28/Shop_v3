@@ -4,7 +4,7 @@ import './Navbar.css'
 import cartlogo from './assets/cartlogo.png'
 import profilelogo from './assets/profilelogo.png'
 import { auth, db } from '../FirebaseConfigs/firebaseConfig'
-import { collection, getDocs, query, where } from 'firebase/firestore'
+import { collection, getDocs, query, QuerySnapshot, where } from 'firebase/firestore'
 import applogo from '../Components/assets/applogo.png'
 
 const Navbar = () => {
@@ -40,6 +40,25 @@ const Navbar = () => {
     })
   }
 
+  const [cartdata, setcartdata] = useState([]);
+  if(loggeduser){
+    const getcartdata = async () => {
+      const cartArray = [];
+      const path = `cart-${loggeduser[0].uid}`
+      //console.log(path)
+      getDocs(collection(db, path)).then((querySnapshot)=> {
+        querySnapshot.forEach((doc) => {
+          //console.log(doc.id, "=>", doc.data());
+          cartArray.push({...doc.data(),id:doc.id})
+        });
+        setcartdata(cartArray)
+        //console.log('done')
+
+      }).catch('Error error error')
+    }
+    getcartdata()
+  }
+
   return (
     <div>
       <div className='navbar'>
@@ -68,8 +87,8 @@ const Navbar = () => {
 
               <Link to="cart">
                 <div className='cart-btn'>
-                  <img src={cartlogo} alt="no img" />
-                  <span className='cart-icon-css'>{loggeduser[0].cart}</span>
+                  <Link to='/cartdata'><img src={cartlogo} alt="no img" /></Link>
+                  <button className='cart-icon-css'>{cartdata.length}</button>
                 </div>
               </Link>
               <Link to="userprofile">
