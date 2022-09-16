@@ -121,7 +121,7 @@ const Addproduct = () => {
             </>}
 
             <label>Key Specification</label>
-            <textarea onChange={(e)=> setKeyspecs(e.target.value)} placeholder="Enter some ksy specification"></textarea>
+            <textarea onChange={(e)=> setKeyspecs(e.target.value)} placeholder="Enter some key specification"></textarea>
 
             <label>Description</label>
             <textarea onChange={(e) => setDescription(e.target.value)} placeholder="Description your Product in breif"></textarea>

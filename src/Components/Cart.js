@@ -54,20 +54,27 @@ const Cart = () => {
   return (
     <div>
       <Navbar />
-      {cartdata ?
+      {cartdata.length != 0 ?
         <div>
           <div className='cart-head'>Your cart Items</div>
           <div className='allcartitems'>
             {cartdata.map((item) => {
-              return(
+              return (
                 <CartCard
-                key={item.id}
-                itemdata={item} />
+                  key={item.id}
+                  itemdata={item}
+                  userid={loggeduser[0].uid}
+                />
               )
             })}
           </div>
-        </div> : <p>
-          Your cart is empty</p>}
+          <div className='proceed'>
+            <button>Proceed</button>
+          </div>
+        </div> :
+        <p>
+          Your cart is empty
+        </p>}
     </div>
   )
 }
