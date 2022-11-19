@@ -1,0 +1,10 @@
+.paymentform {
+    border-radius: 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 10px;
+    width: 350px;
+}

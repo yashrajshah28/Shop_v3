@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Navbar from '../Navbar'
-import { useParams } from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom'
 import { getDoc, doc, collection, query, where, getDocs, addDoc } from 'firebase/firestore'
 import { auth, db } from '../../FirebaseConfigs/firebaseConfig'
 import './Specificproductpage.css'
@@ -121,7 +121,7 @@ const Specificproductpage = () => {
                                 </div>
                             </div>
                             <div className='buy-cart'>
-                                <button className='btn'>Buy Now</button>
+                                <Link to="/payment"><button className='btn'>Buy Now</button></Link>
                                 <button className='btn' onClick={addtocart}>Add to cart</button>
                             </div>
                         </div>

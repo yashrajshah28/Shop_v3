@@ -20,9 +20,9 @@ const Sliderproductcard = (product) => {
             <div className='mini-product-details'>
                 <p className='mini-producttitle'>{p.producttitle}</p>
                 <div className='price-container'>
-                    <p className='mrp'>MRP: <p className='rate'>${mrp}</p></p>
-                    <p className='saleprice'>Discount Price: <p className='rate'>${saleprice}</p></p>
-                    <p className='yousave'>You Save: ${mrp - saleprice}</p>
+                    <p className='mrp'>MRP: <p className='rate'>₹{mrp}</p></p>
+                    <p className='saleprice'>Discount Price: <p className='rate'>₹{saleprice}</p></p>
+                    <p className='yousave'>You Save: ₹{mrp - saleprice}</p>
                 </div>
 
                 <a href={`/product/${p.producttype}/${p.id}`}>

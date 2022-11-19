@@ -4,7 +4,8 @@ import Home from './Components/Home';
 import Login from './Components/Login';
 import Signup from './Components/Signup';
 import Cart from './Components/Cart';
-import UserProfile from './Components/UserProfile'
+import UserProfile from './Components/UserProfile';
+import Payment from './Components/Payment';
 import PgFOF from './Components/PgFOF';
 import Addproduct from './Components/Addproduct';
 import Allproductpage from './Components/Some-Product-Components/Allproductpage';
@@ -31,6 +32,7 @@ function App() {
         <Route exact path="/product-type/shoes" element={<Allproductpage type={'Shoes'} />} />
         <Route exact path="/product-type/furniture" element={<Allproductpage type={'Furniture'} />} />
         <Route exact path="/cartdata" element={<Cart />} />
+        <Route exact path="/payment" element={<Payment />} />
 
         <Route path="/product/:type/:id" element={<Specificproductpage />} />
 

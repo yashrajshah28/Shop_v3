@@ -55,7 +55,7 @@ const CartCard = (props) => {
                 <p>{prodquantity}</p>
                 <button onClick={decreasequantity}>-</button>
             </div>
-            <div className='prodprice'>${saleprice}</div>
+            <div className='prodprice'>₹{saleprice}</div>
             <button className='deletebtn' onClick={deletecartitem}>
                 <img src='https://cdn.discordapp.com/attachments/1014457233393860638/1014487778018463804/delete.png' alt='' />
             </button>

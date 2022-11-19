@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { Link, Navigate, useNavigate } from 'react-router-dom'
 import Navbar from './Navbar'
 import { auth, db } from '../FirebaseConfigs/firebaseConfig'
 import { collection, getDocs, query, where } from 'firebase/firestore'
@@ -69,7 +70,7 @@ const Cart = () => {
             })}
           </div>
           <div className='proceed'>
-            <button>Proceed</button>
+            <Link to="/payment"><button>Proceed</button></Link>
           </div>
         </div> :
         <p>
