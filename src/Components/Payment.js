@@ -3,6 +3,7 @@ import Navbar from './Navbar'
 import Cart from './Cart'
 import CartCard from './CartCard'
 import './Payment.css'
+import { useParams, Link } from 'react-router-dom'
 
 const Payment = () => {
     return (
@@ -11,7 +12,7 @@ const Payment = () => {
             <div className='paymentfrom'>
                 <h2>Payment</h2>
                 <h4>Cards Accepted :</h4>
-                
+
                     <label>Name on Card</label>
                     <input type='text' placeholder='First and last name' />
                     <br></br>
@@ -30,7 +31,7 @@ const Payment = () => {
                     <br></br>
             </div>
             <div className='proceed'>
-                <button>Proceed</button>
+                <Link to= "https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_KkDmcpV3MMgbFW" async><button>Proceed</button></Link>
             </div>
         </div>
     )

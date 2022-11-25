@@ -17,8 +17,8 @@ const Banner = () => {
           alt="First slide"
         />
         <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h3>DHAMAKA OFFER</h3>
+          <p>Use your discount coupon and get your surprise </p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -29,8 +29,8 @@ const Banner = () => {
         />
 
         <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h3>SALE 25% OFF</h3>
+          <p>Black Friday Offer</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -41,9 +41,9 @@ const Banner = () => {
         />
 
         <Carousel.Caption>
-          <h3>Third slide label</h3>
+          <h3>BUY 2 GET 1 FREE</h3>
           <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            On Every Purchase
           </p>
         </Carousel.Caption>
       </Carousel.Item>
@@ -55,9 +55,9 @@ const Banner = () => {
         />
 
         <Carousel.Caption>
-          <h3>Fourth slide label</h3>
+          <h3>BRANDS OF THE WEEK</h3>
           <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            Get your T-shirts, footwear and many more under ₹299
           </p>
         </Carousel.Caption>
       </Carousel.Item>

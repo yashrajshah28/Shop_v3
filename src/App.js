@@ -11,6 +11,9 @@ import Addproduct from './Components/Addproduct';
 import Allproductpage from './Components/Some-Product-Components/Allproductpage';
 //import Productcontainer from './Components/Some-Product-Components/Productcontainer';
 import Specificproductpage from './Components/Some-Product-Components/Specificproductpage';
+import Footer from './Components/Footer';
+
+
 
 
 function App() {
@@ -33,6 +36,7 @@ function App() {
         <Route exact path="/product-type/furniture" element={<Allproductpage type={'Furniture'} />} />
         <Route exact path="/cartdata" element={<Cart />} />
         <Route exact path="/payment" element={<Payment />} />
+      
 
         <Route path="/product/:type/:id" element={<Specificproductpage />} />
 
@@ -40,7 +44,9 @@ function App() {
 
         <Route path="*" element={<PgFOF/>}/>
       </Routes>
+      <Footer />
     </BrowserRouter>
+    
   );
 }
 

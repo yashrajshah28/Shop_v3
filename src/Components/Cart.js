@@ -5,6 +5,7 @@ import { auth, db } from '../FirebaseConfigs/firebaseConfig'
 import { collection, getDocs, query, where } from 'firebase/firestore'
 import CartCard from './CartCard'
 import './Cart.css'
+import Footer from './Footer'
 
 const Cart = () => {
   function GetCurrentUser() {
@@ -76,6 +77,7 @@ const Cart = () => {
         <p>
           Your cart is empty
         </p>}
+        
     </div>
   )
 }

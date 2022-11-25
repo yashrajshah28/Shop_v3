@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import Navbar from './Navbar'
 import Products from './Products'
 import Banner from './Banner'
+import Footer from './Footer'
 import { auth, db } from '../FirebaseConfigs/firebaseConfig'
 import { collection, getDocs, query, where } from 'firebase/firestore'
 import ProductSlider from './Some-Product-Components/ProductSlider'
@@ -40,6 +41,7 @@ const Home = () => {
       <Navbar />
       <Banner />
       <Products />
+      
       <div className='slider-head'><p>Limited Time Deals</p></div>
       <ProductSlider type={'Mobile'} />
       <ProductSlider type={'Laptop'} />

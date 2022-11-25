@@ -10,12 +10,14 @@ import { getStorage } from "firebase/storage";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCYR7Vc5gxLWTv08B3jbyE64z4HuZs75fQ",
-  authDomain: "shop-v3.firebaseapp.com",
-  projectId: "shop-v3",
-  storageBucket: "shop-v3.appspot.com",
-  messagingSenderId: "471674340532",
-  appId: "1:471674340532:web:b60a0a29648aa4262503e1"
+  apiKey: "AIzaSyDSY-uEoCqR5RrUZwRR-zlBJtTtAMku7xw",
+  authDomain: "shopify-439a8.firebaseapp.com",
+  databaseURL: "https://shopify-439a8-default-rtdb.firebaseio.com/",
+  projectId: "shopify-439a8",
+  storageBucket: "shopify-439a8.appspot.com",
+  messagingSenderId: "624461810432",
+  appId: "1:624461810432:web:29b53171953332269281e5",
+  measurementId: "G-8EM5VQ41VX"
 };
 
 // Initialize Firebase
