@@ -6,7 +6,7 @@ const Sliderproductcard = (product) => {
 
     let p = product.product
     let overalltax = 10 / 100;
-    let overcommission = 10 / 100;
+    let overcommission = 5 / 100;
     let extraforfun = 10 / 100;
 
     let mrp = parseInt(p.price);

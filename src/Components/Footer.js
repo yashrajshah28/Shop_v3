@@ -19,37 +19,37 @@ const currency = ["$ - USD", "₹ - INR", "£ - GBP", "€ - EUR", "¥ - JPY"];
 const footerLinks = [
   {
     title: "Get to Know Us",
-    list: ["About Amazon", "Connect with Us", "Amazon Cares", "Gift a Smile"],
+    list: ["About BCA E-Shop Wala", "Connect with Us", "BCA E-Shop Wala Cares", "Gift a Smile"],
   },
   {
     title: "Make Money with Us",
     list: [
-      "Sell products on Amazon",
-      "Sell apps on Amazon",
+      "Sell products on BCA E-Shop Wala",
+      "Sell apps on BCA E-Shop Wala",
       "Become an Affiliate",
       "Advertise Your Products",
       "Self-Publish with Us",
-      "Host an Amazon Hub",
+      "Host an BCA E-Shop Wala Hub",
       "› See More",
     ],
   },
   {
-    title: "Amazon Payment",
+    title: "BCA E-Shop Wala Payment",
     list: [
-      "Amazon Business Card",
+      "BCA E-Shop Wala Business Card",
       "Shop with Points",
       "Reload Your Balance",
-      "Amazon Currency Converter",
+      "BCA E-Shop Wala Currency Converter",
     ],
   },
   {
     title: "Let Us Help You",
     list: [
-      "Amazon and COVID-19",
+      "BCA E-Shop Wala and COVID-19",
       "Shipping Rates & Policies",
       "Returns & Replacements",
       "Manage Your Devices",
-      "Amazon Assistant",
+      "BCA E-Shop Wala Assistant",
     ],
   },
 ];
@@ -59,7 +59,7 @@ function Footer() {
     <div className="footer">
       <div className="footer__inner">
         <div className="footer__disclaimer">
-          <strong>Disclaimer:</strong> This is not the official Amazon Store. It
+          <strong>Disclaimer:</strong> This is not the official BCA E-Shop Wala Store. It
           is a redesign, built purely for educational purpose.
         </div>
         <div className="footer__links">

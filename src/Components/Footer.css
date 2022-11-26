@@ -1,7 +1,10 @@
 .footer {
-  margin-top: auto;
+  margin-top: 1rem;
+  padding: 1rem;
   background: #eaeaea;
   display: flex;
+  bottom: 0;
+  position: bottom;
   flex-flow: column nowrap;
   width: 100%;
 }
