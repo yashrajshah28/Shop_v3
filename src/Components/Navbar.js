@@ -63,7 +63,7 @@ const Navbar = () => {
     <div>
       <div className='navbar'>
         <div className='LeftContainer'>
-          <img src={applogo} />
+          <img src={applogo} alt=''/>
         </div>
         <div className='RightContainer'>
           {!loggeduser && <nav>
@@ -76,7 +76,7 @@ const Navbar = () => {
               <span className='cart-icon-css'>0</span>
             </div>
             <Link to="userprofile">
-              <img src={profilelogo} className='profile-icon' />
+              <img src={profilelogo} className='profile-icon' alt='' />
             </Link>
           </nav>}
 

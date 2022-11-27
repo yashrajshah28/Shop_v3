@@ -7,7 +7,7 @@
 }
 
 .user-profile {
-    background-color: #ffbb00;
+    background-color: #EAEAEA;
     padding: 10px;
     border-radius: 10px;
     width: 500px;
@@ -15,15 +15,15 @@
 
 .user-profile .heading {
     font-size: 30px;
-    color: white;
+    color: black;
     font-weight: 700;
-    border-bottom: 3px solid white;
+    border-bottom: 3px solid #1A1A2C;
 }
 
 .data-row {
     display: flex;
     flex-direction: row;
-    color: white;
+    color: #1A1A2C;
 }
 
 .data-row span {
