@@ -2,7 +2,7 @@
     display: flex;
     justify-content: flex-end;
     width: 100%;
-    background-color: rgb(0, 219, 248);
+    background-color: #1A1A2C;
     align-items: center;
     justify-content: space-between;
 }
@@ -19,15 +19,15 @@ nav {
 
 nav button {
     margin: 5px;
-    background-color: rgb(0, 0, 0);
+    background-color: #1A1A2C;
     border: none;
     color: white;
     padding: 5px;
 }
 
 nav button:hover {
-    background-color: white;
-    color: #ffbb00;
+    background-color: #eaeaea;
+    color: black;
     border-radius: 10px;
 }
 
@@ -84,13 +84,13 @@ nav button:hover {
 }
 
 .product-types {
-    background-color: #ffbb00;
+    background-color: #eaeaea;
     display: flex;
     justify-content: center;
 }
 
 .product-types button {
-    background-color: #ffbb00;
+    background-color: #1A1A2C;
     padding: 0px 5px;
     margin: 8px 15px;
     border: 2px solid white;

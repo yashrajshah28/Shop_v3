@@ -59,8 +59,8 @@ function Footer() {
     <div className="footer">
       <div className="footer__inner">
         <div className="footer__disclaimer">
-          <strong>Disclaimer:</strong> This is not the official BCA E-Shop Wala Store. It
-          is a redesign, built purely for educational purpose.
+          <strong>Disclaimer:</strong> This is official BCA E-Shop Wala Store. It
+          is a made by Reactjs.
         </div>
         <div className="footer__links">
           {footerLinks.map((link) => (

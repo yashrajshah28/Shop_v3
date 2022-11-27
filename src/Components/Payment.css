@@ -1,7 +1,31 @@
-.proceed {
+.payment {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
     height: 500px;
+    margin: auto;
+    
+}
+
+.payment-text-1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    color: blue;
+}
+
+.payment-text-2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    color: blue;
+}
+
+.success {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    height: 200px;
+    width: 200px;
 }

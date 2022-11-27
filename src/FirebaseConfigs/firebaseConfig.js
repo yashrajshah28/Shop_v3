@@ -10,12 +10,13 @@ import { getStorage } from "firebase/storage";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCYR7Vc5gxLWTv08B3jbyE64z4HuZs75fQ",
-  authDomain: "shop-v3.firebaseapp.com",
-  projectId: "shop-v3",
-  storageBucket: "shop-v3.appspot.com",
-  messagingSenderId: "471674340532",
-  appId: "1:471674340532:web:b60a0a29648aa4262503e1"
+  apiKey: "AIzaSyAIqMeIH1PD69nlyyYY4pxf9nOjwEsSJzY",
+  authDomain: "shoppe-f19b9.firebaseapp.com",
+  databaseURL: "https://shoppe-f19b9-default-rtdb.firebaseio.com/",
+  projectId: "shoppe-f19b9",
+  storageBucket: "shoppe-f19b9.appspot.com",
+  messagingSenderId: "865512416278",
+  appId: "1:865512416278:web:4204525a77919cea754137"
 };
 
 // Initialize Firebase
